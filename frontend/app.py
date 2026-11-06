@@ -69,6 +69,37 @@ def foto(producto_id: str) -> Path | None:
     return None
 
 
+def _clave_configurada() -> str:
+    try:
+        return str(st.secrets.get("CLAVE_EQUIPO", "")).strip()
+    except Exception:  # no hay archivo de secrets
+        return ""
+
+
+def acceso_evidencia() -> bool:
+    """La evidencia tiene nombres y teléfonos: solo se muestra en el propio computador
+    (localhost) o con la clave del equipo (secret CLAVE_EQUIPO en Streamlit Cloud)."""
+    try:
+        host = st.context.headers.get("Host", "")
+    except Exception:
+        host = ""
+    if host.split(":")[0] in ("localhost", "127.0.0.1"):
+        return True
+    esperada = _clave_configurada()
+    if not esperada:
+        st.caption("🔒 Para ver la evidencia aquí, configura el secret CLAVE_EQUIPO (ver COMO_ENTRAR.md).")
+        return False
+    if ss.get("equipo_ok"):
+        return True
+    clave = st.text_input("Clave del equipo", type="password")
+    if clave and clave == esperada:
+        ss.equipo_ok = True
+        return True
+    if clave:
+        st.error("Clave incorrecta.")
+    return False
+
+
 def log(evento: str, **detalle):
     evidencia.registrar_evento(ss.sesion, evento, **detalle)
 
@@ -142,9 +173,11 @@ with st.sidebar:
 
         st.divider()
         st.markdown("**Evidencia de las pruebas (Paso 6)**")
-        ev = evidencia.leer("eventos")
-        ped = evidencia.leer("pedidos")
-        if ev.empty:
+        ev = evidencia.leer("eventos") if acceso_evidencia() else None
+        ped = evidencia.leer("pedidos") if ev is not None else pd.DataFrame()
+        if ev is None:
+            pass
+        elif ev.empty:
             st.caption("Aún no hay eventos registrados.")
         else:
             conteo = ev["evento"].value_counts()

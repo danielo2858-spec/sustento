@@ -89,7 +89,31 @@ Debe terminar con `57 passed`.
 
 ---
 
-¿Necesitan un link que funcione para cualquiera, sin instalar nada (por ejemplo para entregar el Taller 4)?
-Hay que publicar la app en **Streamlit Community Cloud** (gratis): entren a https://share.streamlit.io con la
-cuenta de GitHub, elijan este repositorio y como archivo principal `frontend/app.py`. Así obtienen una dirección
-pública del tipo `https://sustento.streamlit.app`.
+## Link público (Streamlit Community Cloud)
+
+Para tener un link que abra cualquier persona sin instalar nada (por ejemplo para entregar el Taller 4):
+
+1. Entra a https://share.streamlit.io con la cuenta de GitHub `danielo2858-spec`.
+2. Oprime **Create app** y elige **Deploy a public app from GitHub**.
+3. Llena el formulario:
+   - **Repository:** `danielo2858-spec/sustento`
+   - **Branch:** `main`
+   - **Main file path:** `frontend/app.py`
+   - **App URL:** por ejemplo `sustento-mvp` (queda `https://sustento-mvp.streamlit.app`)
+4. Abre **Advanced settings**:
+   - **Python version:** 3.12
+   - **Secrets:** pega esta línea, cambiando la clave por una que solo conozca el equipo:
+     ```toml
+     CLAVE_EQUIPO = "una-clave-del-equipo"
+     ```
+5. Oprime **Deploy**. La primera vez tarda 2 o 3 minutos mientras instala las dependencias.
+
+La **evidencia** del Modo equipo (pedidos con nombres y teléfonos) se protege así:
+- en tu computador (`localhost`) se ve sin clave;
+- en el link público pide la clave `CLAVE_EQUIPO`.
+
+⚠️ **Importante:** en Streamlit Cloud los registros se **borran cuando la app se reinicia**, porque eso pasa
+seguido si nadie la usa durante un tiempo. Después de cada jornada de pruebas, entra al Modo equipo y
+descarga `eventos.csv` y `pedidos.csv`.
+
+Cada vez que se suba un cambio a `main` en GitHub, la app pública se actualiza sola.
