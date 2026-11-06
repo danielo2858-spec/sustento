@@ -1,0 +1,9 @@
+productor_id,nombre,finca,vereda,municipio,region,lat,lon,anos_cultivando,hectareas
+P01,Blanca R.,Finca El Retiro,Veraguas,Cogua,Sabana Centro,5.0790,-73.9620,22,3.5
+P02,Hernando P.,Finca La Esperanza,Veraguas,Cogua,Sabana Centro,5.0710,-73.9700,15,2.0
+P03,Luz Marina G.,Finca Los Alisos,Pasoancho,Zipaquirá,Sabana Centro,5.0050,-74.0300,30,4.0
+P04,Óscar M.,Invernadero San José,Río Frío,Tabio,Sabana Centro,4.9300,-74.1050,9,1.2
+P05,Gloria C.,Huerta Santa Rita,Meusa,Sopó,Sabana Centro,4.9050,-73.9300,18,2.8
+P06,Arturo V.,Finca El Mirador,La Fuente,Tocancipá,Sabana Centro,4.9700,-73.9050,12,2.2
+P07,Nubia T.,Finca Las Palmas,El Cobre,La Mesa,Tequendama (red regional),4.6300,-74.4600,25,6.0
+P08,Ramiro S.,Granja La Colina,Veraguas,Cogua,Sabana Centro,5.0650,-73.9550,11,1.5

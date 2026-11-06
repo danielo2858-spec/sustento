@@ -1,0 +1,26 @@
+id,nombre,categoria,unidad,kg_unidad,precio_base,valor_nutricional,consumo_semanal_persona,emoji,productor_id,grupo_madurez,madurez,precio_ref_d1,precio_ref_rappi
+papa_pastusa,Papa pastusa,tuberculo,Bolsa 2 kg,2.0,4200,7.0,0.5,🥔,P01,,,5200,6900
+papa_criolla,Papa criolla,tuberculo,Bolsa 1 kg,1.0,3900,6.5,0.4,🥔,P02,,,4900,6500
+yuca,Yuca,tuberculo,1 kg,1.0,2700,5.5,0.3,🍠,P07,,,3300,4500
+platano_verde,Plátano hartón verde,tuberculo,3 unidades (~1 kg),1.0,3300,6.0,0.4,🍌,P07,platano,verde,4000,5600
+platano_maduro,Plátano hartón maduro,tuberculo,3 unidades (~1 kg),1.0,3400,6.0,0.4,🍌,P07,platano,maduro,4100,5700
+arveja,Arveja verde desgranada,leguminosa,500 g,0.5,4600,8.5,0.3,🫛,P03,,,5900,7600
+frijol,Fríjol bola roja,leguminosa,500 g,0.5,5300,8.5,0.3,🫘,P08,,,6200,8100
+tomate_maduro,Tomate chonto maduro,hortaliza,1 kg,1.0,3700,6.0,0.4,🍅,P04,tomate,maduro,4500,6200
+tomate_verde,Tomate chonto pintón (verde),hortaliza,1 kg,1.0,3400,6.0,0.4,🍅,P04,tomate,verde,4300,5900
+cebolla_cabezona,Cebolla cabezona blanca,hortaliza,1 kg,1.0,3000,5.0,0.3,🧅,P05,,,3700,5100
+cebolla_larga,Cebolla larga,hortaliza,Atado 500 g,0.5,2200,5.0,0.3,🌱,P05,,,2800,3900
+zanahoria,Zanahoria,hortaliza,1 kg,1.0,2200,7.0,0.4,🥕,P01,,,2900,3900
+habichuela,Habichuela,hortaliza,500 g,0.5,2900,7.0,0.3,🫛,P06,,,3600,4900
+calabacin,Calabacín,hortaliza,1 kg,1.0,2600,6.5,0.3,🥒,P06,,,3400,4600
+brocoli,Brócoli,hortaliza,1 unidad (~500 g),0.5,3300,9.0,0.25,🥦,P02,,,4200,5600
+espinaca,Espinaca,hoja,Atado 300 g,0.3,2500,9.0,0.3,🥬,P05,,,3200,4300
+lechuga,Lechuga crespa,hoja,1 unidad,0.4,2000,6.0,0.3,🥬,P02,,,2600,3500
+banano,Banano,fruta,1 kg,1.0,2900,6.5,0.5,🍌,P07,,,3500,4900
+papaya,Papaya,fruta,1 unidad (~1.5 kg),1.5,5300,7.5,0.2,🍈,P07,,,6400,8800
+mora,Mora de Castilla,fruta,500 g,0.5,4300,8.0,0.2,🫐,P06,,,5300,7200
+fresa,Fresa,fruta,500 g,0.5,5600,8.0,0.2,🍓,P04,,,6900,9300
+uchuva,Uchuva,fruta,250 g,0.25,3100,8.0,0.2,🟠,P03,,,3900,5200
+tomate_arbol,Tomate de árbol,fruta,1 kg,1.0,4000,7.5,0.3,🍊,P06,,,4900,6700
+huevos,Huevos de campo,proteina,Cubeta 15 unidades,0.9,9800,9.5,0.35,🥚,P08,,,11900,15200
+queso,Queso campesino,lacteo,500 g,0.5,9500,8.0,0.25,🧀,P01,,,11500,14900

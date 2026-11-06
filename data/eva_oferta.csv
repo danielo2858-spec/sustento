@@ -1,0 +1,26 @@
+producto_id,oferta_semanal_unid,excedente_unid,motivo_excedente,temporada
+papa_pastusa,400,120,Papa de tamaño pequeño,alta
+papa_criolla,250,0,,media
+yuca,180,0,,media
+platano_verde,200,0,,media
+platano_maduro,150,60,Cáscara con manchas (pulpa perfecta),media
+arveja,160,0,,alta
+frijol,140,0,,media
+tomate_maduro,300,90,Tamaños y formas variadas,alta
+tomate_verde,220,0,,alta
+cebolla_cabezona,260,0,,media
+cebolla_larga,240,0,,alta
+zanahoria,350,140,Zanahorias torcidas o dobles,alta
+habichuela,150,0,,media
+calabacin,180,70,Forma curva o tamaño grande,alta
+brocoli,130,0,,media
+espinaca,140,0,,alta
+lechuga,200,0,,alta
+banano,300,100,Cáscara con pecas (punto de dulce),alta
+papaya,120,50,Papayas redondas (no alargadas),media
+mora,110,0,,media
+fresa,130,40,Fresas pequeñas o irregulares,alta
+uchuva,0,0,,baja
+tomate_arbol,140,0,,media
+huevos,200,0,,media
+queso,90,0,,media
